@@ -46,6 +46,7 @@ public class MyStackTest {
     }
 
     public void pop() {
+        //TODO 异常处理
         double num = myStack.pop();
 
         System.out.println("pop得到的元素为:" + num);
