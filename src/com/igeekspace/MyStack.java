@@ -2,6 +2,9 @@ package com.igeekspace;
 
 import java.util.Stack;
 
+/**
+ * 一个有 getMin 功能的栈
+ */
 public class MyStack {
     private Stack<Double> nums;
     private Stack<Double> mins;
