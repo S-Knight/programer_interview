@@ -24,13 +24,13 @@ public class MyStackTest {
                 pop();
             } else if (userChoice.equals("3")) {
                 getMin();
-            }else if(!userChoice.equals("q")) {
+            } else if (!userChoice.equals("q")) {
                 System.out.println("输入错误，请重新输入!");
             }
         } while (!userChoice.equals("q"));
     }
 
-    public void showTips() {
+    private void showTips() {
         System.out.println("--------请选择要执行的操作--------");
         System.out.println("1：push元素");
         System.out.println("2：pop元素");
@@ -38,21 +38,21 @@ public class MyStackTest {
         System.out.println("q：退出");
     }
 
-    public void push() {
+    private void push() {
         System.out.println("请输入要push的元素:");
 
         double num = scanner.nextDouble();
         myStack.push(num);
     }
 
-    public void pop() {
+    private void pop() {
         //TODO 异常处理
         double num = myStack.pop();
 
         System.out.println("pop得到的元素为:" + num);
     }
 
-    public void getMin() {
+    private void getMin() {
         double num = myStack.getMin();
 
         System.out.println("getMin得到的元素为:" + num);
