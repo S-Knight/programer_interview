@@ -2,6 +2,9 @@ package com.igeekspace;
 
 import java.util.Stack;
 
+/**
+ * 仅用递归函数和栈操作逆序一个栈
+ */
 public class ReverseStack {
     private Stack<Integer> stack;
 
@@ -30,7 +33,7 @@ public class ReverseStack {
     }
 
     public void reverse() {
-        if(stack.empty()){
+        if (stack.empty()) {
             return;
         }
 
